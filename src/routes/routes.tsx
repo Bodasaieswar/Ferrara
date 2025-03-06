@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Menu from '../components/Menu.tsx'
 import Offline from "../components/Offline.tsx";
+import PdfToImage from "../components/PdfToImage.tsx"
 
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
           {
             path: "offline",
             element: <Offline />,
+          },
+          {
+              path: "menu_pdf",
+              element: <PdfToImage pdfFile="/menu.pdf" />
           }
       ],
   },
